@@ -1,0 +1,18 @@
+
+name: "DoAsI"
+main: com.lb_stuff.doasi.DoAsI
+version: 1.0.0
+author: "Nicholas \"LB\" Braden"
+description: "A better sudo plugin"
+
+commands:
+  DoAsI:
+    description: "Display info about DoAsI or sudo a player wth your own permissions"
+    usage: "/DoAsI [<player> <command> [command-args...]]"
+    permission: DoAsI.use
+    permission-message: "Do it yourself!"
+
+permissions:
+  DoAsI.use:
+    description: "Allows use of DoAsI's /doasi command"
+    default: op
